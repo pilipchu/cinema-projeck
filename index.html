@@ -1,45 +1,270 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Cinema</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/logo.svg" type="image/x-icon">
-</head>
-<body>
-    <header class="header container">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="img/favicon.svg" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
         <a href="/index.html">
-            <img class="logo" src="./img/logo.svg" alt="logo">
+          <svg class="logo" alt="logo">
+            <use href="./img/icon.svg#icon-logo"></use>
+          </svg>
         </a>
         <nav class="nav">
-            <ul class="menu">
-                <li class="menu-item">
-                    <a href="#" class="menu-link">Главная</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-link">Фільми</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-link">Кінотеатри</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-link">Собитія</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-link">Підтримка</a>
-                </li>
-            </ul>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#" class="menu-link">Головна</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Фільми</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Кінотеатри</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Події</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Підтримка</a>
+            </li>
+          </ul>
         </nav>
         <div class="user">
-            <span class="">Привіт, Мілла</span>
-            <img class="avatar" src="img/d5bd33c8bbfb614b7a1f06e07d7a624b3e86e9e8.png" alt="User">
+          <p class="user-name">Привіт, Мілла</p>
+          <img
+            class="avatar"
+            src="img/d5bd33c8bbfb614b7a1f06e07d7a624b3e86e9e8.png"
+            alt="User"
+          />
         </div>
+      </div>
     </header>
-    <script src=""></script>
-</body>
+    <main>
+      <div class="backgaund-img">
+        <section class="section-film">
+          <div class="film container">
+            <div class="film-info">
+              <small class="film-title-small">Avengers: Infinity War</small>
+              <h1 class="film-title">Месники: війна нескінченності</h1>
+              <p class="film-description">
+                Поки Месники та їх союзники продовжують захищати світ від різних
+                небезпек, з якими не зміг би впоратися один супергерой, Нова
+                загроза виникає із космосу: Танос. Міжгалактичний тиран має на
+                меті зібрати всі шість каменів нескінченності - артефакти
+                неймовірної сили, за допомогою яких можна міняти реальність за
+                власним бажанням. Все, з чим месники стикалися раніше, вело до
+                цього моменту - доля Землі ніколи ще не була настільки
+                невизначеною.
+              </p>
+              <div class="film-details">
+                <div class="clock">
+                  <svg class="time-icon">
+                    <use href="./img/icon.svg#icon-clock"></use>
+                  </svg>
+                  <span class="film-counter">240 мин.</span>
+                </div>
+                <div class="rating">
+                  <img src="/img/imdb.png" alt="imdb" class="rating-icon" />
+                  <span class="rating-counter"
+                    ><strong class="rating-current">9.2</strong>/ 10</span
+                  >
+                </div>
+              </div>
+            </div>
+            <a href="#" class="film-trailer">
+              <svg class="play-icon">
+                <use href="./img/icon.svg#icon-play-button"></use>
+              </svg>
+            </a>
+          </div>
+        </section>
+        <section class="section-session">
+          <div class="session container">
+            <div class="session-date">
+              <span class="session-label">Дата</span>
+              <div class="session-date-block">
+                <div class="session-date-item">
+                  <span class="sesion-mounth"></span>
+                  <span class="session-day"></span>
+                  <span class="session-week-day"></span>
+                </div>
+                <div class="session-date-item">
+                  <span class="sesion-mounth"></span>
+                  <span class="session-day"></span>
+                  <span class="session-week-day"></span>
+                </div>
+                <div class="session-date-item">
+                  <span class="sesion-mounth"></span>
+                  <span class="session-day"></span>
+                  <span class="session-week-day"></span>
+                </div>
+                <div class="session-date-item last">
+                  <span class="sesion-mounth"></span>
+                  <span class="session-day"></span>
+                  <span class="session-week-day"></span>
+                </div>
+              </div>
+            </div>
+            <div class="session-cinema">
+              <span class="session-label cinema">Кінотеатр</span>
+              <div class="custom-select">
+                <button class="select-btn">
+                  <span class="selected">Оберіть кінотеатр</span>
+                  <span class="arrow"
+                    ><svg class="arrow-time-icon">
+                      <use href="./img/icon.svg#icon-arr"></use>
+                    </svg>
+                  </span>
+                </button>
+                <ul class="options">
+                  <li
+                    data-value="Multiplex Lavina IMAX Лазер, вулиця Братів Чмілів, 107"
+                  >
+                    Multiplex Lavina IMAX Лазер, вулиця Братів Чмілів, 107
+                  </li>
+                  <li data-value="Multiplex ЦУМ, вулиця Лагунової, 12-14">
+                    Multiplex ЦУМ, вулиця Лагунової, 12-14
+                  </li>
+                  <li
+                    data-value="Multiplex Проспект, вулиця Генерала Ватутіна, 111"
+                  >
+                    Multiplex Проспект, вулиця Генерала Ватутіна, 111
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="session-time">
+              <span class="session-label time">Час</span>
+              <div class="custom-select-time">
+                <button class="select-btn-time">
+                  <span class="selected-time">Час</span>
+                  <span class="arrow-time">
+                    <svg class="arrow-time-icon">
+                      <use href="./img/icon.svg#icon-arr"></use>
+                    </svg>
+                  </span>
+                </button>
+                <ul class="options-time">
+                  <li data-value="09:10">09:10</li>
+                  <li data-value="12:10">12:10</li>
+                  <li data-value="15:10">15:10</li>
+                  <li data-value="17:10">17:10</li>
+                  <li data-value="20:10">20:10</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="section-scheme">
+        <div class="scheme container">
+          <div class="screen"></div>
+          <div class="seat">
+            <ul class="seat-list seat">
+              <li class="seat-item">
+                <svg class="seat-icon icon-booked">
+                  <use href="./img/Vector-1.svg"></use>
+                </svg>
+              </li>
+              <!-- вміст заповнюється через скірпт -->
+            </ul>
+          </div>
+          <div class="seats-conte">
+            <ul class="seat-list-dwn seat">
+              <li class="seat-item">
+                <svg class="seat-icon icon-booked">
+                  <use href="./img/Vector-1.svg"></use>
+                </svg>
+              </li>
+              <!-- вміст заповнюється через скірпт -->
+            </ul>
+            <ul class="seat-list-dwn seat">
+              <li class="seat-item">
+                <svg class="seat-icon icon-booked">
+                  <use href="./img/Vector-1.svg"></use>
+                </svg>
+              </li>
+              <!-- вміст заповнюється через скірпт -->
+            </ul>
+          </div>
+          <div class="custom-line"></div>
+          <div class="pay">
+            <ul class="pay-list">
+              <li>
+                <p class="pay-item">
+                  <span
+                    ><svg class="icon-free">
+                      <use href="./img/Vector-1.svg"></use></svg></span
+                  >Вільно
+                </p>
+              </li>
+              <li>
+                <p class="pay-item selected-text">
+                  <span
+                    ><svg class="icon-selected">
+                      <use href="./img/Vector-1.svg"></use></svg></span
+                  >Вибрано
+                </p>
+              </li>
+              <li>
+                <p class="pay-item">
+                  <span
+                    ><svg class="icon-booked">
+                      <use href="./img/Vector-1.svg"></use></svg></span
+                  >Заброньовано
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section-pay">
+        <div class="pay-btn-block container">
+          <p class="pay-sum">
+            Всього до сплати <span class="pay-amount">₴</span>
+          </p>
+          <button class="pay-btn">Перейти до оплати</button>
+        </div>
+      </section>
+    </main>
+    <div class="modal-window">
+      <button>
+        <svg class="icon-close"><use href="./img/cross.svg"></use></svg>
+      </button>
+      <div class="modal-content">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/6ZfuNTqbHE8"
+          title="Marvel Studios' Avengers: Infinity War Official Trailer"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

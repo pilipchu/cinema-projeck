@@ -640,6 +640,8 @@ body {
 
 .modal-content {
   position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
   z-index: 1;
   width: 1180px;
   height: 660px;

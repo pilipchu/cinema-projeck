@@ -14,6 +14,14 @@ const arrowTimeIcon = document.querySelector(".arrow-time");
 const list = document.querySelector(".seat-list");
 const listSecond = document.querySelectorAll(".seat-list-dwn");
 const payAmount = document.querySelector(".pay-amount");
+const btnTrailer = document.querySelector(".film-trailer");
+const modalWindow = document.querySelector(".modal-window");
+const closeModal = document.querySelector(".close-modal");
+const body = document.body;
+const iframe = document.querySelector("iframe");
+
+
+const tempScr = iframe.src;
 
 // Початкова сума до сплати
 const pay = 0;
@@ -135,4 +143,26 @@ seatItems.forEach(seat => {
             console.log("Це місце вже заброньовано"); 
         }
     }); 
+});
+
+// подія на клік по кнопці перегляду трейлера, відкриваємо модальне вікно
+btnTrailer.addEventListener("click", () => {
+  modalWindow.classList.add("is-open");
+  body.classList.add("modal-open");
+  iframe.src = tempScr; // Встановлюємо src iframe, щоб відтворювати відео
+}); 
+
+closeModal.addEventListener("click", () => {
+  modalWindow.classList.remove("is-open");
+  body.classList.remove("modal-open");
+  iframe.src = ""; // Очищуємо src iframe, щоб зупинити відтворення відео
+});
+
+// подія на клік по модальному вікну, якщо клік поза контентом - закриваємо модальне вікно
+modalWindow.addEventListener("click", (e) => {
+  if (e.target === modalWindow) {
+    modalWindow.classList.remove("is-open");
+    body.classList.remove("modal-open");
+    iframe.src = ""; // Очищуємо src iframe, щоб зупинити відтворення відео
+  }
 });
